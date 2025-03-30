@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Java
-categories: Java
+title: MySQL
+categories: MySQL
 ---
 
 <div id="blog-archives">
 
-	{% for post in site.posts %}
+	{% for post in site.posts,mysql %}
 		<article class="post">
 			{% if post.external-url %}
 				<h1>
