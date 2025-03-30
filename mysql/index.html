@@ -6,7 +6,8 @@ categories: mysql
 
 <div id="blog-archives">
 
-	{% for post in site.mysql %}
+	{% assign mysql_posts = site.categories.mysql %}
+		{% for post in mysql_posts %}
 		<article class="post">
 			{% if post.external-url %}
 				<h1>

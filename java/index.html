@@ -6,7 +6,8 @@ categories: java
 
 <div id="blog-archives">
 
-	{% for post in site.java %}
+	{% assign mysql_posts = site.categories.java %}
+		{% for post in java_posts %}
 		<article class="post">
 			{% if post.external-url %}
 				<h1>
