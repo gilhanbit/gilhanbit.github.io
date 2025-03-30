@@ -5,22 +5,62 @@ date:   2025-03-30
 tags: [github, blog]
 ---
 
-안녕하세요, 저는 비전공자로 개발자에 도전 중인 사람입니다.
-
-디자인을 전공했지만, 코드에 빠져 하루하루 성장 중이에요.
-
-이 블로그는 비전공자의 눈으로 본 개발 공부 과정을 담고 있어요.
-
-처음엔 Hello World 하나 띄우는 것도 두려웠지만,
-지금은 스스로 프로젝트도 만들고 있어요.
-
-기초 문법, CS지식, 포트폴리오 준비, 면접 후기까지
-진짜 비전공자의 리얼한 여정을 함께 나누고 싶어요.
-
-비슷한 길을 가는 분들께 작게나마 도움이 되기를 바라며 하루하루 배운 것을 기록해 나갑니다.
+<img src="/images/undraw_coding.png">
 
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
+안녕하세요, 저는 비전공자로 개발자가 되기 위해 도전 중인 사람입니다.
+
+개발자가 되고자 마음을 먹었을 때, 자신감 보다는 '내가 정말 개발자가 될 수 있을까?'가 먼저였습니다.
+
+컴퓨터공학을 전공한 사람들은 이미 알고 있을 법한 용어들이, 저에겐 외계어 같았거든요.
+
+CS(Computer Science), JavaScript, HTML… 뭘 먼저 해야 할지도 모르는 사람이었죠.
+
+
+하지만 곰곰이 생각해보면, 모든 시작은 낯설 수밖에 없습니다.
+
+제가 지금까지 살아온 실과는 완전히 다른 길이었지만, 오히려 다양한 경험이 강점이 될 수 있다고 믿기로 했습니다.
+
+새로운 시선, 다른 방식의 사고.
+
+비전공자라는 이유만으로 스스로를 깎아내릴 필요는 없다는 걸, '길고 짧은 건 대봐야 안다!' 힘들 때마다 머릿속에 되새기며 천천히 배워가고 있습니다.
+
+
+당연히 쉽진 않습니다.
+
+문법을 하나하나 익히고, 오류를 파악하고, 수정하며 문제를 해결하는 과정은 사람을 쉽게 지치게 만들기도 합니다.
+
+하지만 그런 순간마다 스스로에게 묻습니다.
+
+'내가 이걸 왜 시작했지?' 하고 말이죠.
+
+저는 단순히 코딩을 배우고 싶었던 게 아니라, 문제를 해결할 수 있는 사람이 되고 싶었습니다.
+
+그리고 무엇보다, 세상에 어떤 식으로든 기여할 수 있는 사람이 되고 싶습니다.
+
+
+내가 만든 코드가 실제로 작동하고, 누군가에게 쓰인다는 사실만으로도 개발자라는 직업은 참 매력적으로 다가왔습니다.
+
+비전공자로서 개발자가 되는 건, 단순한 기술 습득을 넘어서 ‘자아실현’의 과정이라 생각해요.
+
+포기하지 않고, 하루 하나라도 익히고, 에러를 만나면 피하지 않고 집요하게 파고드는 태도.
+
+그게 결국 개발자의 마음가짐 아닐까요?
+
+
+처음엔 갈 길이 너무 멀어 보였지만, 이제는 조금씩 또렷해지고 있는 것 같습니다.
+
+매일 한 걸음씩 나아가는 사람만이 그 길 끝에 닿을 수 있다는 것.
+
+그리고 그 길은 전공자에게만 열려 있는 게 아니라, 누구에게나 열려 있다는 것을요.
+
+
+비전공자라는 단어에 주눅 들지 않고, 나만의 속도로 꾸준히 나아가겠습니다.
+
+언젠가는 저처럼 고민하고 있는 누군가에게 "나도 해냈으니, 당신도 할 수 있어요"라고 말해줄 수 있는 사람이 되는 그날까지 계속 정진하겠습니다.
+
+
+<!--You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
 Jekyll also offers powerful support for code snippets:
@@ -36,4 +76,4 @@ print_hi('Tom')
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
 [jekyll]:    http://jekyllrb.com
-[jekyll-gh]: https://github.com/mojombo/jekyll
+[jekyll-gh]: https://github.com/mojombo/jekyll-->
