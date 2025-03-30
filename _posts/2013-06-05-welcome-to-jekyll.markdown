@@ -5,7 +5,9 @@ date:   2025-03-30
 tags: [github, blog]
 ---
 
-<img src="/images/undraw_coding.png" class="left" alt="개발자" width="200">
+<div>
+  <img src="/images/undraw_coding.png" class="left" alt="개발자" width="200">
+</div>
 
 
 안녕하세요, 저는 비전공자로 개발자가 되기 위해 도전 중인 사람입니다.
