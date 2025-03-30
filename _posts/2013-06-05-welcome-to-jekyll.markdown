@@ -4,8 +4,8 @@ title:  "비전공자의 개발자 도전기"
 date:   2025-03-30
 ---
 
-<img src="/images/undraw_coding.png" alt="개발자" width="200">
-<br><br>
+<br>
+<img src="/images/undraw_coding.png" style="float:left" alt="개발자" width="200">
 
 안녕하세요, 저는 비전공자로 개발자가 되기 위해 도전 중인 사람입니다.
 
