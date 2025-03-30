@@ -7,6 +7,7 @@ date:   2025-03-30
 <br>
 <img src="/images/undraw_coding.png" style="float:left;" alt="개발자" width="200">
 <div style="clear: both;"></div>
+<br>
 
 안녕하세요, 저는 비전공자로 개발자가 되기 위해 도전 중인 사람입니다.
 
