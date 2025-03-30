@@ -1,6 +1,6 @@
 name: daily coding
 url: http://example.org
-description: Welcome to my github blog!
+description: Welcome to my github blog! I'm hanbit.
 
 permalink: /:year/:month/:day/:title/
 paginate: 10
