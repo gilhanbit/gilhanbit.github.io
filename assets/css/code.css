@@ -2,7 +2,7 @@
 
 .highlight {
   background: #272822;
-  color: #f8f8f2;
+  color: #ffffff;
   padding: 1em;
   border-radius: 8px;
   overflow-x: auto;
@@ -25,10 +25,10 @@
 .highlight .no   { color: #66d9ef; } /* constant */
 .highlight .nb   { color: #f8f8f2; } /* built-in name */
 .highlight .bp   { color: #f8f8f2; } /* builtin pseudo */
-.highlight .nv   { color: #f8f8f2; } /* variable name */
-.highlight .vc   { color: #f8f8f2; } /* variable class */
-.highlight .vg   { color: #f8f8f2; } /* variable global */
-.highlight .vi   { color: #f8f8f2; } /* variable instance */
+.highlight .nv   { color: #ffffff; } /* variable name */
+.highlight .vc   { color: #ffffff; } /* variable class */
+.highlight .vg   { color: #ffffff; } /* variable global */
+.highlight .vi   { color: #ffffff; } /* variable instance */
 .highlight .o    { color: #f92672; } /* operator */
 .highlight .c    { color: #75715e; font-style: italic; } /* comment */
 .highlight .cm   { color: #75715e; font-style: italic; } /* multiline comment */
