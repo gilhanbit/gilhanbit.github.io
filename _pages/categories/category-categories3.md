@@ -1,9 +1,9 @@
 ---
-title: "Categories3"
+title: "DB"
 layout: category
-permalink: /categories/categories3/
+permalink: /categories/db/
 author_profile: true
-taxonomy: Categories3
+taxonomy: DB
 sidebar:
   nav: "categories"
 ---
