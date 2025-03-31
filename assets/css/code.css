@@ -1,19 +1,21 @@
-/* One Dark 테마 기반 스타일 */
 .highlight pre {
-    background: #282c34;
-    color: #abb2bf;
-    padding: 1em;
-    border-radius: 8px;
-    overflow-x: auto;
-    font-family: 'Fira Code', 'Courier New', monospace;
-    font-size: 0.95em;
-    line-height: 1.5;
-  }
-  
-  /* 코드 내부 토큰 스타일 */
-  .highlight .k     { color: #c678dd; } /* keyword */
-  .highlight .s     { color: #98c379; } /* string */
-  .highlight .n     { color: #e5c07b; } /* name/variable */
-  .highlight .c     { color: #5c6370; font-style: italic; } /* comment */
-  .highlight .o     { color: #56b6c2; } /* operator */
-  .highlight .p     { color: #abb2bf; } /* punctuation */  
+  background: #282c34;
+  color: #abb2bf;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* Rouge 토큰별 색상 지정 */
+.highlight .cp { color: #c678dd; }  /* <!DOCTYPE> */
+.highlight .nt { color: #e06c75; }  /* 태그 이름 */
+.highlight .na { color: #d19a66; }  /* 속성 이름 */
+.highlight .s  { color: #98c379; }  /* 문자열 */
+.highlight .c  { color: #5c6370; font-style: italic; } /* 주석 */
+.highlight .k  { color: #c678dd; }  /* 키워드 */
+.highlight .o  { color: #56b6c2; }  /* 연산자 */
+.highlight .n  { color: #e5c07b; }  /* 이름/변수 */
+.highlight .p  { color: #abb2bf; }  /* 기본 텍스트 */
