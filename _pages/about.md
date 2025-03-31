@@ -17,10 +17,7 @@ comments: false
 컴퓨터공학을 전공한 사람들은 이미 알고 있을 법한 용어들이<br>
 저에겐 외계어 같았거든요.<br>
 <br>
-
-`CS(Computer Science)`, `JavaScript`, `HTML`…
-
-<br>
+CS(Computer Science), JavaScript, HTML…<br>
 뭘 먼저 해야 할지도 모르는 사람이었죠.
 </p>
 
