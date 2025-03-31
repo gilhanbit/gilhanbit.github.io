@@ -101,8 +101,8 @@ author:
   name: "gilhanbit" # 블로그 닉네임
   avatar: "/assets/images/meee.png" # 블로그 프로필 사진
   #   bio              : "hi all!"
-  # location         : "Seoul, Korea"
-  # email            : "youremailhere@xxxxxx.com"
+  location         : "Seoul, Korea"
+  email            : "rlaqnwksp@gmail.com"
 
   links: # 사이트 링크
 #     - label: "Email"
@@ -117,12 +117,12 @@ author:
 #     - label: "Facebook"
 #       icon: "fab fa-fw fa-facebook-square"
 #       # url: "https://facebook.com/"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://www.instagram.com/"
+     - label: "GitHub"
+       icon: "fab fa-fw fa-github"
+       url: "https://gilhanbit.github.io/"
+     - label: "Instagram"
+       icon: "fab fa-fw fa-instagram"
+       url: "https://www.instagram.com/gilhanbit/"
 
 # Site Footer
 footer:
