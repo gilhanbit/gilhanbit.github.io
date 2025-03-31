@@ -5,15 +5,15 @@ excerpt: "본문의 주요 내용을 여기에 입력하세요"
 categories:
   - Java
 tags:
-  - [tag1, tag2]
+  - [java, condition]
 
-permalink: /java/post-name-here/
+permalink: /java/condition/
 
 toc: true
 toc_sticky: true
 
-date: 2020-05-21
-last_modified_at: 2021-10-09
+date: 2025-03-31
+last_modified_at: 2025-03-31
 ---
 
 ## 🦥 본문
