@@ -29,5 +29,6 @@ if문은 가장 기본적인 조건문 중 하나로 조건이 'true'일 때만 
     if (num > 5) {
     System.out.println("num은 5보다 큽니다.");
     }
+    ```
   </code>
 </pre>
