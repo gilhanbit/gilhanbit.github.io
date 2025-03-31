@@ -22,13 +22,10 @@ last_modified_at: 2025-03-31
 </p>
 <h2>1. if문</h2>
 if문은 가장 기본적인 조건문 중 하나로 조건이 'true'일 때만 해당 블록의 코드가 실행된다.
-<pre>
-  <code>
-    ```java
-    int num = 10;
-    if (num > 5) {
-    System.out.println("num은 5보다 큽니다.");
-    }
-    ```
-  </code>
-</pre>
+
+```java
+int num = 10;
+if (num > 5) {
+System.out.println("num은 5보다 큽니다.");
+}
+```
