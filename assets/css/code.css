@@ -11,6 +11,11 @@
   line-height: 1.5;
 }
 
+/* 클래스가 없는 span에 적용 (Rouge가 무시한 경우) */
+.highlight code span:not([class]) {
+  color: #fd971f; /* 예: Monokai 스타일의 주황색 */
+}
+
 /* 기본 토큰 */
 .highlight .k    { color: #f92672; } /* keyword */
 .highlight .kc   { color: #f92672; } /* keyword constant */
