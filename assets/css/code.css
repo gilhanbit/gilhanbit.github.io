@@ -30,6 +30,7 @@
 .highlight .no   { color: #66d9ef; } /* constant */
 .highlight .nb   { color: #f8f8f2; } /* built-in name */
 .highlight .bp   { color: #f8f8f2; } /* builtin pseudo */
+.highlight .n    { color: #ffffff;}
 .highlight .nv   { color: #ffffff; } /* variable name */
 .highlight .vc   { color: #ffffff; } /* variable class */
 .highlight .vg   { color: #ffffff; } /* variable global */
