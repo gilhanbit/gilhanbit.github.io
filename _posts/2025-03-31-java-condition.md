@@ -21,11 +21,9 @@ last_modified_at: 2025-03-31
 
 <hr>
 
-<h2>1. if문</h2>
+## 1. if문
 
-<blockquote>
-if문은 가장 기본적인 조건문 중 하나로 조건이 `true`일 때만 해당 블록의 코드가 실행된다.
-</blockquote>
+>if문은 가장 기본적인 조건문 중 하나로 조건이 `true`일 때만 해당 블록의 코드가 실행된다.
 
 ```java
 int num = 10;
@@ -38,11 +36,9 @@ System.out.println("num은 5보다 크다.");
 
 <hr>
 
-<h2>2. if-else문</h2>
+## 2. if-else문
 
-<blockquote>
-`if` 조건이 `true`일 때와 `false`일 때 각각 다른 코드를 실행하고 싶을 때 사용한다.
-</blockquote>
+>`if` 조건이 `true`일 때와 `false`일 때 각각 다른 코드를 실행하고 싶을 때 사용한다.
 
 ```java
 int num = 3;
@@ -59,12 +55,10 @@ if (num > 5) {
 
 <hr>
 
-<h2>3. switch문</h2>
+## 3. switch문
 
-<blockquote>
-하나의 변수나 표현식의 값에 따라 여러 가지 경우(case) 중 하나를 선택해 실행할 때 사용된다.
+>하나의 변수나 표현식의 값에 따라 여러 가지 경우(case) 중 하나를 선택해 실행할 때 사용된다.
 주로 정수, 문자, 문자열 등 명확한 값 비교에 사용.
-</blockquote>
 
 ```java
 int day = 3;
