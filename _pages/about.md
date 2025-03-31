@@ -4,6 +4,9 @@ permalink: /about/
 layout: single
 comments: false
 ---
+<div>
+    <img src="/assets/images/about_me.png" alt="about_me" min-width="700px">
+</div>
 
 안녕하세요, 저는 비전공자로 개발자가 되기 위해 도전 중인 사람입니다.
 
