@@ -5,7 +5,7 @@ excerpt: "쓴 그대로 보여주는 태그"
 categories:
   - Front End
 tags:
-  - [frontend, pre]
+  - [frontend, pretag]
 
 permalink: /front_end/pre_tag/
 
