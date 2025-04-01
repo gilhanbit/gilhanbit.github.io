@@ -38,9 +38,9 @@ last_modified_at: 2025-04-01
 
 ```html
 <pre>
-여기에 작성한
-내용은 그대로
- 출력됩니다.
+  여기에 작성한
+  내용은 그대로
+  출력됩니다.
 </pre>
 ```
 
@@ -50,9 +50,9 @@ last_modified_at: 2025-04-01
 
 ```html
 <pre>
-function sayHello() {
- console.log("Hello, world!");
-}
+  function sayHello() {
+  console.log("Hello, world!");
+  }
 </pre>
 ```
 
