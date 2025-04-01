@@ -76,3 +76,9 @@ switch (day) {
 
 `switch` 안의 값과 `case`를 비교해서 일치하면 해당 블록이 출력되며, `break`를 써서 실행이 멈추도록 해야 한다. (안 쓰면 끝까지 다 봄) 
 어떤 `case`도 해당되지 않으면 `default` 블록이 실행되며 종료된다.
+
+<hr>
+
+## 4. 연습문제
+
+![문제](/assets/images/posts_img/condition/quiz.png)
