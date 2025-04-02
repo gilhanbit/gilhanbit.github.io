@@ -35,42 +35,74 @@ last_modified_at: 2025-04-02
 ## 2. 개념 설명
 
 ### 라이브러리(Library)
-- **도구 상자** 같다고 보면 돼요.
-- 필요할 때 꺼내서 내가 사용하는 구조입니다.
-- 예: `React`는 UI 컴포넌트를 만들 수 있는 라이브러리입니다.
-  - 내가 직접 컴포넌트를 만들고, 필요한 라이브러리를 가져와 사용하죠.
+- 흔히 **도구 상자**에 비유.
+- 필요할 때 꺼내서 사용하는 도구들을 모아 놓음.
+- Math, random 등.
 
-**예시 코드 (React):**
-```js
-import { useState } from 'react'; // 내가 필요한 것만 가져옴
+`Hello, World!`를 출력하기 위해 직접 서버를 구성해야 하며 구조와 흐름 또한 **개발자가 직접 작성해야 한다.**
 
-function App() {
-  const [count, setCount] = useState(0); // 내가 직접 로직 제어
-  return <button onClick={() => setCount(count + 1)}>Click</button>;
-}
-```
-
----
-
-### 2. ✅ 프레임워크(Framework)
-- **틀이 잡힌 집**에 내가 들어가서 살아야 해요.
-- 흐름을 프레임워크가 잡고 있고, 나는 그 안에서 코드를 작성합니다.
-- 예: `Vue.js`, `Angular`, `Spring`은 모두 프레임워크입니다.
-
-**예시 코드 (Spring):**
 ```java
-@RestController
-public class HelloController {
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello, world!";
+import com.sun.net.httpserver.HttpServer;
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpExchange;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+
+public class HelloWorldServer {
+    public static void main(String[] args) throws IOException {
+        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+        server.createContext("/", new MyHandler());
+        server.setExecutor(null); // 기본 executor
+        server.start();
+        System.out.println("서버 시작됨: http://localhost:8000");
+    }
+
+    static class MyHandler implements HttpHandler {
+        @Override
+        public void handle(HttpExchange t) throws IOException {
+            String response = "Hello, World!";
+            t.sendResponseHeaders(200, response.getBytes().length);
+            OutputStream os = t.getResponseBody();
+            os.write(response.getBytes());
+            os.close();
+        }
     }
 }
 ```
-- 위 코드처럼 Spring이 라우팅과 실행 흐름을 제어해줍니다.
-- 나는 정해진 규칙에 맞춰 `@GetMapping`, `@RestController` 등을 써야 하죠.
 
----
+
+### 프레임워크(Framework)
+- 도구를 사용해 직접 집을 지을 필요는 없고 **집**에 필요한 가구 등만 배치하면 됨.
+- 흐름은 프레임워크가 잡고 있으며, 개발자는 주어진 흐름 위에 코드를 작성.
+
+```java
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+public class HelloWorldApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(HelloWorldApplication.class, args);
+    }
+}
+
+@RestController
+class HelloController {
+    @GetMapping("/")
+    public String hello() {
+        return "Hello, World!";
+    }
+}
+```
+
+- 위 코드처럼 Spring이 라우팅과 실행 흐름을 제어.
+- 개발자는 정해진 규칙에 맞춰 `@GetMapping`, `@RestController` 등을 사용.
+
+<hr>
 
 ## 🎯 비유로 이해하기
 
