@@ -1,6 +1,6 @@
 ---
-title: "[CS] Library, Framework 차이점"
-excerpt: "많이 헷갈리는 Library, Framework의 차이점"
+title: "[CS] 비전공자도 쉽게 이해하는 Library, Framework 차이점"
+excerpt: "많이 헷갈리는 Library, Framework에 대해서 알아보자"
 
 categories:
   - CS
@@ -16,11 +16,11 @@ date: 2025-04-02
 last_modified_at: 2025-04-02
 ---
 
-많은 사람들이 혼동하는 개념인데요, **라이브러리(Library)**와 **프레임워크(Framework)**는 소프트웨어 개발 도구이지만, **제어의 흐름(Control Flow)**에서 큰 차이가 있어요.
+## 1. 요약
 
----
+>**라이브러리(Library)**와 **프레임워크(Framework)**는 비슷하면서도 다른 개발 도구로 **제어의 흐름(Control Flow)**에서 차이가 있다.
 
-## ✅ 한눈에 보는 차이점 요약
+**한눈에 보는 차이점**
 
 | 항목             | 라이브러리 (Library)             | 프레임워크 (Framework)             |
 |------------------|----------------------------------|-----------------------------------|
@@ -30,11 +30,11 @@ last_modified_at: 2025-04-02
 | **의존 방식**     | 내가 필요할 때 가져다 씀              | 내가 프레임워크 안에서 움직임         |
 | **예시**         | React, jQuery, Lodash              | Angular, Vue.js, Spring            |
 
----
+<hr>
 
-## 🔍 개념 설명
+## 2. 개념 설명
 
-### 1. ✅ 라이브러리(Library)
+### 라이브러리(Library)
 - **도구 상자** 같다고 보면 돼요.
 - 필요할 때 꺼내서 내가 사용하는 구조입니다.
 - 예: `React`는 UI 컴포넌트를 만들 수 있는 라이브러리입니다.
