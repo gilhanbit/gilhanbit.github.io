@@ -113,6 +113,8 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem:
 
 아주 기초 중의 기초이지만 무의식적으로 void를 print에 집어넣은 것.
 
+<hr>
+
 ## 2. 에러 원인
 
 위 오류 메시지는 Java 코드에서 `System.out.println()` 메서드에 `void` 타입 값을 넣으려고 해서 발생하는 문제다.
