@@ -37,6 +37,7 @@
 .highlight .vi   { color: #ffffff; } /* variable instance */
 .highlight .o    { color: #f92672; } /* operator */
 .highlight .c    { color: #038901; font-style: italic; } /* comment */
+.highlight .c1   { color: #038901; font-style: italic; } /* single-line comment */
 .highlight .cm   { color: #038901; font-style: italic; } /* multiline comment */
 .highlight .cp   { color: #038901; font-style: italic; } /* preprocessor */
 .highlight .cs   { color: #038901; font-style: italic; } /* special comment */
