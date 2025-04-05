@@ -36,10 +36,10 @@
 .highlight .vg   { color: #ffffff; } /* variable global */
 .highlight .vi   { color: #ffffff; } /* variable instance */
 .highlight .o    { color: #f92672; } /* operator */
-.highlight .c    { color: #75715e; font-style: italic; } /* comment */
-.highlight .cm   { color: #75715e; font-style: italic; } /* multiline comment */
-.highlight .cp   { color: #75715e; font-style: italic; } /* preprocessor */
-.highlight .cs   { color: #75715e; font-style: italic; } /* special comment */
+.highlight .c    { color: #038901; font-style: italic; } /* comment */
+.highlight .cm   { color: #038901; font-style: italic; } /* multiline comment */
+.highlight .cp   { color: #038901; font-style: italic; } /* preprocessor */
+.highlight .cs   { color: #038901; font-style: italic; } /* special comment */
 .highlight .gd   { color: #f92672; } /* deleted */
 .highlight .gi   { color: #a6e22e; } /* inserted */
 .highlight .go   { color: #66d9ef; } /* output */
