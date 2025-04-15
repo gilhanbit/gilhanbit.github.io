@@ -30,7 +30,7 @@ last_modified_at: 2025-04-15
 2. 별점(점수) 필터 체크박스
 3. submit 타입 버튼
 
-```html
+```
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -65,7 +65,7 @@ pageEncoding="UTF-8"%>
 
 ## 3. Result page
 
-```java
+```
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
