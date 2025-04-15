@@ -65,6 +65,7 @@ pageEncoding="UTF-8"%>
 
 ## 3. Result page
 
+{% raw %}
 ```html
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -134,6 +135,7 @@ pageEncoding="UTF-8"%>
   </body>
 </html>
 ```
+{% endraw %}
 
 <hr>
 
