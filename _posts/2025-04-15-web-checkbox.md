@@ -5,7 +5,7 @@ excerpt: "checkbox로 조건 걸기"
 categories:
   - Web
 tags:
-  - [web, checkbox, parameter, null]
+  - [web, checkbox, parameter]
 
 permalink: /web/checkbox/
 
