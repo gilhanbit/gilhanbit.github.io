@@ -30,7 +30,7 @@ last_modified_at: 2025-04-15
 2. 별점(점수) 필터 체크박스
 3. submit 타입 버튼
 
-```
+```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -65,7 +65,7 @@ pageEncoding="UTF-8"%>
 
 ## 3. Result page
 
-```
+```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
@@ -141,14 +141,12 @@ pageEncoding="UTF-8"%>
 
 ```java
 if (starPointFilter != null && (double)item.get("point") <= 4.0)
--> if (starPointFilter.equals("on") && (double)item.get("point") <= 4.0)
-// checkbox에 체크 시 on으로 들어오니 on으로 비교해도 같은 결과가 출력되지 않을까?
+if (starPointFilter.equals("on") && (double)item.get("point") <= 4.0)
+// 위를 아래처럼 수정 checkbox에 체크 시 on으로 들어오니 on으로 비교해도 같은 결과가 출력되지 않을까?
 
 
-/*
-결과: NPE
-이유: starPointFilter는 현재 null인데 비교를 위해 equals("on")를 호출하려했기 때문이다. (null이면 값 자체가 없지만 on일 경우 string으로 on저장)
-*/
+// 결과: NPE
+// 이유: starPointFilter는 현재 null인데 비교를 위해 equals("on")를 호출하려했기 때문이다. (null이면 값 자체가 없지만 on일 경우 string으로 on저장)
 ```
 
 알고나면 당연한 결과지만, 에러를 분석하기 전까지 사람 머리로는 맞는 조건이 아니라고 하니 아주 흥미롭다.
