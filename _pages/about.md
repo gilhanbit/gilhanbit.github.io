@@ -9,6 +9,8 @@ comments: false
 </div>
 
 <p>
+<font color="#99000">한 번의 성공 보다 중요한 건, 여러 번의 좋은 실패다.</font><br>
+<br>
 안녕하세요, 저는 비전공자로 개발자가 되기 위해 도전 중인 사람입니다.<br>
 <br>
 개발자가 되고자 마음을 먹었을 때,<br>
@@ -30,7 +32,7 @@ CS(Computer Science), JavaScript, HTML…<br>
 새로운 시선, 다른 방식의 사고.<br>
 <br>
 비전공자라는 이유만으로 스스로를 깎아내릴 필요는 없다는 걸,<br>
-<font color="blue"><b>'길고 짧은 건 대봐야 안다!'</b></font><br>
+<font color="#000099"><b>'길고 짧은 건 대봐야 안다!'</b></font><br>
 힘들 때마다 머릿속에 되새기며 천천히 배워가고 있습니다.
 </p>
 
@@ -79,6 +81,6 @@ CS(Computer Science), JavaScript, HTML…<br>
 나만의 속도로 꾸준히 나아가겠습니다.<br>
 <br>
 언젠가는 저처럼 고민하고 있는 누군가에게<br>
-<font color="blue"><b>"나도 해냈으니, 당신도 할 수 있어요"</b></font>라고<br>
+<font color="#000099"><b>"나도 해냈으니, 당신도 할 수 있어요"</b></font>라고<br>
 말해줄 수 있는 사람이 되는 그날까지 계속 정진하겠습니다.
 </p>
