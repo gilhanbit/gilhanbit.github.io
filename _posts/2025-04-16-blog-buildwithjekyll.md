@@ -1,5 +1,5 @@
 ---
-title: "[Blog] pages build and deployment 실패"
+title: "[Blog] pages build and deployment 에러"
 excerpt: ".md 파일은 repository에 정상적으로 업로드 되었으나 블로그에 노출이 되지 않을 때"
 
 categories:
@@ -16,7 +16,7 @@ date: 2025-04-16
 last_modified_at: 2025-04-16
 ---
 
-## 1. pages build and deployment 실패
+## 1. pages build and deployment 에러
 
 어느 때처럼 vscode에 글을 작성 후 깃헙 리포지토리에 push를 했다.
 
@@ -46,13 +46,13 @@ last_modified_at: 2025-04-16
 
 Build with Jekyll 좌측 X 옆의 화살표 버튼을 누르면 에러의 원인을 파악할 수 있다.
 
-그리고 나의 에러 원인은...
+처음에는 jsp 지원을 하지 않아서 발생한 에러인가 싶어, 있는 그대로 출력하도록 지시하는 태그를 집어넣어 수습했는데 진짜 에러 원인은 따로 있었다.
 
 ![에러3](/assets/images/posts_img/buildwithjekyll/error4.png)
 
-**Jekyll이 Liquid 템플릿 문법을 잘못 해석해 에러를 발생시킨 것**이다.
+바로 **Jekyll이 Liquid 템플릿 문법을 잘못 해석해 에러를 발생시킨 것**이다.
 
-처음에는 jsp 지원을 하지 않아서 발생한 에러인가 싶었는데, 제대로 알고보니 아니었던 것.
+코드 블록의 내용을 {{ 로 시작하는 Liquid 변수로 오해하면서 발생한 문제였던 것.
 
 그럼 동일한 코드를 jsp로 감싸주고 에러의 원인만 수정해보자.
 
