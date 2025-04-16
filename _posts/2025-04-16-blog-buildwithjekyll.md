@@ -50,7 +50,7 @@ Build with Jekyll 좌측 X 옆의 화살표 버튼을 누르면 에러의 원인
 
 ![에러3](/assets/images/posts_img/buildwithjekyll/error4.png)
 
-Jekyll이 Liquid 템플릿 문법을 잘못 해석해 에러를 발생시킨 것이다.
+**Jekyll이 Liquid 템플릿 문법을 잘못 해석해 에러를 발생시킨 것**이다.
 
 처음에는 jsp 지원을 하지 않아서 발생한 에러인가 싶었는데, 제대로 알고보니 아니었던 것.
 
@@ -117,8 +117,7 @@ Jekyll이 Liquid 템플릿 문법을 잘못 해석해 에러를 발생시킨 것
 
 만약 이 글이 보인다면 제대로 수정한 것!
 
-{% raw %}
-```
-{% raw %} 다른 한가지 방법은 이렇게 감싸는 방법이있다. {% endraw %}
-```
-{% endraw %}
+다른 한가지 방법은 이렇게 감싸는 방법이있다.
+
+{% raw %}{%{% endraw %} raw %}
+{% raw %}{%{% endraw %} endraw %}
