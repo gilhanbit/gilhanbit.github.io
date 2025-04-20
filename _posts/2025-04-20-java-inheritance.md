@@ -210,3 +210,4 @@ public class HealthRate extends HealthInfo {
 [참고 3](https://hoons-dev.tistory.com/105)
 [참고 4](https://hoons-dev.tistory.com/106)
 [참고 5](https://www.inflearn.com/community/questions/1558064/9%EB%B6%84-%EC%A7%88%EB%AC%B8?focusComment=407077&srsltid=AfmBOoq5q0tmkW_SoS8A8xUwjli913L1kscYrQoQ20vG-4-qWKFl-bdC)
+[참고 6](https://inpa.tistory.com/entry/OOP-%F0%9F%92%A0-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5%EC%9D%98-%EC%83%81%EC%86%8D-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%A9%EC%84%B1Composition-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#1._%EA%B2%B0%ED%95%A9%EB%8F%84%EA%B0%80_%EB%86%92%EC%95%84%EC%A7%90)
