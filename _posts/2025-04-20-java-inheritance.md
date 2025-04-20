@@ -57,7 +57,7 @@ public class HealthInfo {
 	protected int height;
 	protected int weight;
 
-  // 생성자(Constructor): 객체가 생성될 때 한번만 불려지는 특수한 메소드
+	// 생성자(Constructor): 객체가 생성될 때 한번만 불려지는 특수한 메소드
 	// return type이 아예 존재하지 않음(void 금지)
 	// 클래스명과 같다.
 	public HealthInfo(String name, int height, int weight) {
@@ -68,11 +68,11 @@ public class HealthInfo {
 
 	public void showInfo() {
 		System.out.println(name + "님의 신장 " + height + ", 몸무게 " + weight + "kg 입니다.");
-  }
+	}
 
 	public String getName() {
 		return name;
-  }
+	}
 
 	public int getHeight() {
 		return height;
@@ -91,25 +91,25 @@ public class HealthRate extends HealthInfo {
 	public HealthRate(String name, int height, int weight) {
 		// 생성자를 만들지 않으면 파라미터가 없는 기본 생성자가 만들어진다.
 		// 파라미터 있는 생성자를 만들면 기본 생성자가 만들어지지 않는다.
-		
+
 		// 상속을 받는 자식 클래스의 객체를 생성할 때 부모 생성자가 먼저 호출된 뒤, 자식 생성자가 그 다음에 호출된다.
-		
+
 		// 임의로 부모 생성자를 부르지 않으면 부모 기본 생성자를 호출하려고 시도한다.
 		// 하지만 부모 클래스에 기본 생성자가 없으므로 3개의 파라미터가 있는 부모 생성자를 호출.
 		super(name, height, weight);
 
-    // 부모 클래스에 파라미터가 없는 기본 생성자가 있거나, 생성자 자체가 없을 경우?
-    // 자식 클래스에서 super()를 호출하지 않아도 컴파일러가 자동으로 생성하여 호출함.
+		// 부모 클래스에 파라미터가 없는 기본 생성자가 있거나, 생성자 자체가 없을 경우?
+		// 자식 클래스에서 super()를 호출하지 않아도 컴파일러가 자동으로 생성하여 호출함.
 	}
-	
+
 	public double standardWeight() {
 		return (this.height - 100) * 0.9;
 	}
-	
+
 	public double getRate() {
 		return (this.weight - standardWeight()) / standardWeight() * 100;
 	}
-	
+
 	public String status() {
 		double rate = getRate();
 		if (rate < 10) {
@@ -120,7 +120,7 @@ public class HealthRate extends HealthInfo {
 			return "비만";
 		}
 	}
-	
+
 	@Override
 	public void showInfo() {
 		// 출력 (ex: 홍길동님의 신장 160, 몸무게 45kg => 정상입니다.)
@@ -205,9 +205,9 @@ public class HealthRate extends HealthInfo {
 
 **참고**
 
-[참고 1](https://chanhuiseok.github.io/posts/java-1/)
-[참고 2](https://backenddeveloper.tistory.com/7)
-[참고 3](https://hoons-dev.tistory.com/105)
-[참고 4](https://hoons-dev.tistory.com/106)
-[참고 5](https://www.inflearn.com/community/questions/1558064/9%EB%B6%84-%EC%A7%88%EB%AC%B8?focusComment=407077&srsltid=AfmBOoq5q0tmkW_SoS8A8xUwjli913L1kscYrQoQ20vG-4-qWKFl-bdC)
-[참고 6](https://inpa.tistory.com/entry/OOP-%F0%9F%92%A0-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5%EC%9D%98-%EC%83%81%EC%86%8D-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%A9%EC%84%B1Composition-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#1._%EA%B2%B0%ED%95%A9%EB%8F%84%EA%B0%80_%EB%86%92%EC%95%84%EC%A7%90)
+- [참고 1](https://chanhuiseok.github.io/posts/java-1/)
+- [참고 2](https://backenddeveloper.tistory.com/7)
+- [참고 3](https://hoons-dev.tistory.com/105)
+- [참고 4](https://hoons-dev.tistory.com/106)
+- [참고 5](https://www.inflearn.com/community/questions/1558064/9%EB%B6%84-%EC%A7%88%EB%AC%B8?focusComment=407077&srsltid=AfmBOoq5q0tmkW_SoS8A8xUwjli913L1kscYrQoQ20vG-4-qWKFl-bdC)
+- [참고 6](https://inpa.tistory.com/entry/OOP-%F0%9F%92%A0-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5%EC%9D%98-%EC%83%81%EC%86%8D-%EB%AC%B8%EC%A0%9C%EC%A0%90%EA%B3%BC-%ED%95%A9%EC%84%B1Composition-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#1._%EA%B2%B0%ED%95%A9%EB%8F%84%EA%B0%80_%EB%86%92%EC%95%84%EC%A7%90)
