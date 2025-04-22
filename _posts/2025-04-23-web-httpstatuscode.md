@@ -30,15 +30,15 @@ HTTP란 이름대로라면 하이퍼텍스트(Hypertext)만 전송할 수 있어
 
 상태 코드는 세 자리 숫자로 되어 있으며 첫 번째 숫자는 HTTP 응답의 종류를 구분하는 데 사용하며 나머지 2개의 숫자는 세부적인 응답 내용 구분을 위한 번호이다.
 
-1. **<font color="##000099">Informational responses (100 – 199)</font>** 정보를 제공하는 응답
+1. **<font color="#000099">Informational responses (100 – 199)</font>** 정보를 제공하는 응답
    1. 1xx: 임시 응답으로 현재 클라이언트의 요청까지는 처리되었으니 계속 진행
-2. **<font color="##000099">Successful responses (200 – 299)</font>** 성공적인 응답
+2. **<font color="#000099">Successful responses (200 – 299)</font>** 성공적인 응답
    1. 2xx: 클라이언트의 요청이 서버에서 성공적으로 처리됨
-3. **<font color="##000099">Redirection messages (300 – 399)</font>** 리다이렉트
+3. **<font color="#000099">Redirection messages (300 – 399)</font>** 리다이렉트
    1. 3xx: 완전한 처리를 위해 추가 동작이 필요한 경우. 주로 요청한 주소(URL)가 이동됨을 뜻함
-4. **<font color="##000099">Client error responses (400 – 499)</font>** 클라이언트 에러
+4. **<font color="#000099">Client error responses (400 – 499)</font>** 클라이언트 에러
    1. 4xx: 클라이언트에서 없는 페이지를 요청한 경우
-5. **<font color="##000099">Server error responses (500 – 599)</font>** 서버 에러
+5. **<font color="#000099">Server error responses (500 – 599)</font>** 서버 에러
    1. 5xx: 서버 부하, DB 처리 오류, 익셉션이 발생하는 경우
 
 <hr>
@@ -65,7 +65,7 @@ HTTP란 이름대로라면 하이퍼텍스트(Hypertext)만 전송할 수 있어
 
 ## 2. Successful responses (200 – 299)
 
-### <font color="##990000">200</font>
+### <font color="#990000">200</font>
 **OK**
 요청이 `성공`적으로 되었음을 말한다. (성공의 의미는 HTTP 메소드에 따라 달라짐)
 - GET: 리소스를 불러와서 메시지 바디에 전송
@@ -73,11 +73,11 @@ HTTP란 이름대로라면 하이퍼텍스트(Hypertext)만 전송할 수 있어
 - PUT 또는 POST: 수행 결과에 대한 리소스가 메시지 바디에 전송됨
 - TRACE: 메시지 바디는 서버에서 수신한 요청 메시지를 포함하고 있음
 
-### <font color="##990000">201</font>
+### <font color="#990000">201</font>
 **Created**
 요청이 성공적이었으며 그 결과로 `새로운 리소스가 생성`됨. (이 응답은 일반적으로 POST 요청 또는 일부 PUT 요청 이후에 따라옴)
 
-### <font color="##990000">202</font>
+### <font color="#990000">202</font>
 **Accepted**
 요청을 수신하였지만 처리가 완료되지 않음. `나중에 처리`한다는 걸 뜻한다. (주로 비동기 작업 요청 시 사용)
 
@@ -93,7 +93,7 @@ HTTP란 이름대로라면 하이퍼텍스트(Hypertext)만 전송할 수 있어
 
 ## 3. Redirection messages (300 – 399)
 
-### <font color="##990000">301</font>
+### <font color="#990000">301</font>
 **Moved Permanently**
 요청한 `리소스의 URI(Uniform Resource Identifier)가 새로운 URI로 변경되었음`을 의미한다.
 
@@ -101,7 +101,7 @@ HTTP란 이름대로라면 하이퍼텍스트(Hypertext)만 전송할 수 있어
 **Found**
 요청한 리소스의 URI가 일시적으로 변경되었음을 의미한다. (302를 정확하게 개선해 307을 정의하였으므로 이 응답 코드의 사용은 권장하지 않음)
 
-### <font color="##990000">303</font>
+### <font color="#990000">303</font>
 **See Other**
 클라이언트가 `요청한 리소스를 다른 URI에서 GET 요청을 통해 얻어야 할 때`, 서버가 클라이언트로 직접 보내는 응답이다. (다른 위치로 요청할 것)
 
@@ -109,7 +109,7 @@ HTTP란 이름대로라면 하이퍼텍스트(Hypertext)만 전송할 수 있어
 **Not Modified**
 마지막 요청 이후 클라이언트에게 응답이 수정되지 않았음을 알려준다.
 
-### <font color="##990000">307</font>
+### <font color="#990000">307</font>
 **Temporary Redirect**
 임시로 리다이렉션 요청이 필요. `요청한 주소가 임시로 바뀌었을 때`를 말한다. 만약 첫 요청에 POST가 사용되었다면, 두번째 요청도 반드시 POST를 사용해야 한다.
 
@@ -121,11 +121,11 @@ HTTP란 이름대로라면 하이퍼텍스트(Hypertext)만 전송할 수 있어
 
 ## 4. Client error responses (400 – 499)
 
-### <font color="##990000">400</font>
+### <font color="#990000">400</font>
 **Bad Request**
 `잘못된 문법`으로 인하여 서버가 요청을 이해할 수 없음을 의미한다.
 
-### <font color="##990000">401</font>
+### <font color="#990000">401</font>
 **Unauthorized**
 리소스에 대한 `액세스 권한이 없다.`
 
@@ -133,11 +133,11 @@ HTTP란 이름대로라면 하이퍼텍스트(Hypertext)만 전송할 수 있어
 **Payment Required**
 디지털 결제 시스템에 사용하기 위하여 만들어졌지만 지금 사용되고 있지는 않다.
 
-### <font color="##990000">403</font>
+### <font color="#990000">403</font>
 **Forbidden**
 `클라이언트가 콘텐츠에 접근할 권리를 가지고 있지 않음`을 의미한다. 401과 다른 점은 서버가 클라이언트가 누구인지 알고 있다는 것이다.
 
-### <font color="##990000">404</font>
+### <font color="#990000">404</font>
 **Not Found**
 `서버가 요청받은 리소스를 찾을 수 없음.` 브라우저에서는 알려지지 않은 URL을 의미한다. API 종점으로 적절하지만 리소스 자체는 존재하지 않음을 의미할 수도 있으며, 서버들은 인증받지 않은 `클라이언트로부터 리소스를 숨기기 위하여 이 응답을 403 대신에 전송할 수도 있다.`
 
