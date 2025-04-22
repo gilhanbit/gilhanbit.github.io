@@ -12,8 +12,8 @@ permalink: /web/httpstatuscode/
 toc: true
 toc_sticky: true
 
-date: 2025-04-22
-last_modified_at: 2025-04-22
+date: 2025-04-23
+last_modified_at: 2025-04-23
 ---
 
 HTTP(Hypertext Transfer Protocol)는 웹 서버와 웹 클라이언트 사이에서 데이터를 주고받기 위해 사용하는 통신 방식으로 TCP/IP 프로토콜 위에서 동작한다.
