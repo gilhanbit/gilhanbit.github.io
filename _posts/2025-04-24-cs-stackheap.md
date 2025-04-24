@@ -12,8 +12,8 @@ permalink: /cs/stackheap/
 toc: true
 toc_sticky: true
 
-date: 2024-04-24
-last_modified_at: 2024-04-24
+date: 2025-04-24
+last_modified_at: 2025-04-24
 ---
 
 기술면접에서 자주 나온다고 하는 만큼, 개발자에게 `stack`과 `heap`은 굉장히 중요하다.
