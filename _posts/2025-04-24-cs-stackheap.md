@@ -124,5 +124,5 @@ public class Memory {
 
 **참고**
 
-[참고 1](https://helloworld-japan.tistory.com/33)
-[참고 2](https://junghyun100.github.io/%ED%9E%99-%EC%8A%A4%ED%83%9D%EC%B0%A8%EC%9D%B4%EC%A0%90/)
+- [참고 1](https://helloworld-japan.tistory.com/33)
+- [참고 2](https://junghyun100.github.io/%ED%9E%99-%EC%8A%A4%ED%83%9D%EC%B0%A8%EC%9D%B4%EC%A0%90/)
