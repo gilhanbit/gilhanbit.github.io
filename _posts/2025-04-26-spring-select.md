@@ -191,10 +191,6 @@ public class realEstateBO {
   public List<realEstate> getRealEstate(Integer area, Integer price) {
    return realEstateMapper.selectRealEstate(area, price);
   }
-
-  public boolean addRealEstate(realEstate realEstate) {
-    return realEstateMapper.insertRealEstate(realEstate);
-  }
 }
 ```
 
@@ -221,8 +217,6 @@ public interface realEstateMapper {
   @Param("area") Integer area,
   @Param("price") Integer price
   );
-
-  public boolean insertRealEstate(realEstate realEstate);
 }
 ```
 
@@ -318,31 +312,6 @@ public interface realEstateMapper {
   AND
     `price` &lt;= #{price}
   </select>
-
-  <insert id="insertRealEstate" parameterType="com.quiz.lesson03.domain.realEstate">
-  INSERT INTO `real_estate`
-  (
-    `realtorId`
-    ,`address`
-    ,`area`
-    ,`type`
-    ,`price`
-    ,`rentPrice` <!-- null이더라도 코드 중복을 방지(재사용성 높임)하기 위해 table column은 써준다. -->
-    ,`createdAt`
-    ,`updatedAt`
-  )
-  VALUES
-  (
-    #{realtorId}
-    ,#{address}
-    ,#{area}
-    ,#{type}
-    ,#{price}
-    ,#{rentPrice}
-    ,NOW()
-    ,NOW()
-  )
-  </insert>
 
 </mapper>
 ```
