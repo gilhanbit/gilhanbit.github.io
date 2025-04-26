@@ -78,7 +78,7 @@ entity 개념을 포함하고 있다.
 
 굳이 entity와 구분을 하자면, entity는 본래 DB의 table을, DTO는 더하거나 뺀(수정) 객체를 말한다.
 
-<u>DTO는 `domain`, `model` 등으로 불리기도 한다.</u>
+<u>DTO는 'domain', 'model' 등으로 불리기도 한다.</u>
 
 
 <hr>
@@ -95,14 +95,14 @@ view는 주로 FE의 영역이므로 controller부터 이해해보자.
 @Controller // HTML로 보내는 컨트롤러 @ResponseBody가 있으면 안됨
 public class Lesson01Ex02Controller {
 
-@RequestMapping("/lesson01/ex02")
-public String ex02() {
+  @RequestMapping("/lesson01/ex02")
+  public String ex02() {
   // return되는 String은 html의 경로이다. (@ResponseBody가 없을 때)
   // /templates/lesson01/ex02.html -> 타임리프가 앞뒤 생략 후 주소 바꿔줌 lesson01/ex02
-  return "lesson01/ex02"; // response html view 경로 (파일 경로 / 위 Mapping 주소와 아무런 연관이 없음)
+    return "lesson01/ex02"; // response html view 경로 (파일 경로 / 위 Mapping 주소와 아무런 연관이 없음)
   
   // @ResponseBody가 아닌 상태로 String을 return하면 viewresolver가 경로를 찾아 해당 파일이 보여짐
-}
+  }
 }
 ```
 
@@ -113,14 +113,14 @@ public String ex02() {
 // parameter (X)
 @RestController // view를 별도로 만들지 않았을 때 리턴하겠다는 스프링빈 어노테이션
 public class lesson02Quiz01Controller {
-	
-	@Autowired // 개발자가 직접 new를 하지 않아도 new를 해서 객체를 사용할 수 있다. (DI)
-	private storeBO storeBO;
-	
-	@RequestMapping("/lesson02/quiz01") // 해당 URI로 연결
-	public List<store> quiz01() {
-		return storeBO.getStoreList(); // view에 출력 (쿼리문에 따라 달라짐)
-	}
+
+  @Autowired // 개발자가 직접 new를 하지 않아도 new를 해서 객체를 사용할 수 있다. (DI)
+  private storeBO storeBO;
+
+  @RequestMapping("/lesson02/quiz01") // 해당 URI로 연결
+  public List<store> quiz01() {
+    return storeBO.getStoreList(); // view에 출력 (쿼리문에 따라 달라짐)
+  }
 }
 
 
@@ -128,38 +128,38 @@ public class lesson02Quiz01Controller {
 @RequestMapping("/lesson03/quiz01") // 컨트롤러 위에서 mapping시 메서드들 공통 주소를 만들 수 있다.
 @RestController
 public class lesson03Quiz01RestController {
-	
-	@Autowired
-	public realEstateBO realEstateBO;
-	
-	@RequestMapping("/1")
-	public realEstate quiz01_1(
-			@RequestParam(value = "id", defaultValue = "1") int id
-      // 파라미터가 있을 경우 ex) http://localhost/lesson03/quiz01/1?id=(value) / 파라미터 타입은 int
-	) {
-		return realEstateBO.getRealEstateById(id); // BO에게 id v 전달 및 리턴
-	}
-	
-	@RequestMapping("/2")
-	public List<realEstate> quiz01_2(
-			@RequestParam(value = "rent_price", required = false) Integer rentPrice
-	) {
-		if (rentPrice == null) { // 파라미터가 null일 때의 조건문
-			return realEstateBO.getRealEstateAll();
-		}
-		return realEstateBO.getRealEstateByRentPrice(rentPrice);
-	}
-	
-	@RequestMapping("/3")
-	public List<realEstate> quiz01_3(
-			@RequestParam(value = "area", required = false) Integer area,
-			@RequestParam(value = "price", required = false) Integer price
-	) {
-		if (area == null || price == null) {
-			return realEstateBO.getRealEstateAll();
-		}
-		return realEstateBO.getRealEstate(area, price);
-	}
+
+  @Autowired
+  public realEstateBO realEstateBO;
+
+  @RequestMapping("/1")
+  public realEstate quiz01_1(
+  @RequestParam(value = "id", defaultValue = "1") int id
+  // 파라미터가 있을 경우 ex) http://localhost/lesson03/quiz01/1?id=(value) / 파라미터 타입은 int
+  ) {
+   return realEstateBO.getRealEstateById(id); // BO에게 id v 전달 및 리턴
+  }
+
+  @RequestMapping("/2")
+  public List<realEstate> quiz01_2(
+  @RequestParam(value = "rent_price", required = false) Integer rentPrice
+  ) {
+    if (rentPrice == null) { // 파라미터가 null일 때의 조건문
+      return realEstateBO.getRealEstateAll();
+    }
+    return realEstateBO.getRealEstateByRentPrice(rentPrice);
+  }
+
+  @RequestMapping("/3")
+  public List<realEstate> quiz01_3(
+  @RequestParam(value = "area", required = false) Integer area,
+  @RequestParam(value = "price", required = false) Integer price
+  ) {
+    if (area == null || price == null) {
+      return realEstateBO.getRealEstateAll();
+    }
+    return realEstateBO.getRealEstate(area, price);
+  }
 }
 ```
 
@@ -172,29 +172,29 @@ public class lesson03Quiz01RestController {
 ```java
 @Service
 public class realEstateBO {
-	
-	@Autowired
-	public realEstateMapper realEstateMapper;
-	
-	public realEstate getRealEstateById(int id) { // controller와 소통
-		return realEstateMapper.selectRealEstateById(id); // mapper와 소통
-	}
-	
-	public List<realEstate> getRealEstateByRentPrice(Integer rentPrice) {
-		return realEstateMapper.selectRealEstateByRentPrice(rentPrice);
-	}
-	
-	public List<realEstate> getRealEstateAll() {
-		return realEstateMapper.selectRealEstateAll();
-	}
-	
-	public List<realEstate> getRealEstate(Integer area, Integer price) {
-		return realEstateMapper.selectRealEstate(area, price);
-	}
-	
-	public boolean addRealEstate(realEstate realEstate) {
-		return realEstateMapper.insertRealEstate(realEstate);
-	}
+
+  @Autowired
+  public realEstateMapper realEstateMapper;
+
+  public realEstate getRealEstateById(int id) { // controller와 소통
+   return realEstateMapper.selectRealEstateById(id); // mapper와 소통
+  }
+
+  public List<realEstate> getRealEstateByRentPrice(Integer rentPrice) {
+    return realEstateMapper.selectRealEstateByRentPrice(rentPrice);
+  }
+
+  public List<realEstate> getRealEstateAll() {
+   return realEstateMapper.selectRealEstateAll();
+  }
+
+  public List<realEstate> getRealEstate(Integer area, Integer price) {
+   return realEstateMapper.selectRealEstate(area, price);
+  }
+
+  public boolean addRealEstate(realEstate realEstate) {
+    return realEstateMapper.insertRealEstate(realEstate);
+  }
 }
 ```
 
@@ -207,22 +207,22 @@ public class realEstateBO {
 ```java
 @Mapper
 public interface realEstateMapper {
-	
-	public realEstate selectRealEstateById(int id); // xml과 소통
-	
-	public List<realEstate> selectRealEstateByRentPrice(Integer rentPrice);
-	
-	public List<realEstate> selectRealEstateAll();
-	
-	public List<realEstate> selectRealEstate(
-			// xml로 파라미터를 보낼 때 한개만 가능
-			// 즉, 2개 이상일 시 Map으로 담아 보내야함
-			// @Param 어노테이션을 붙이면 하나의 Map이 됨.
-			@Param("area") Integer area,
-			@Param("price") Integer price
-	);
-	
-	public boolean insertRealEstate(realEstate realEstate);
+
+  public realEstate selectRealEstateById(int id); // xml과 소통
+
+  public List<realEstate> selectRealEstateByRentPrice(Integer rentPrice);
+
+  public List<realEstate> selectRealEstateAll();
+
+  public List<realEstate> selectRealEstate(
+  // xml로 파라미터를 보낼 때 한개만 가능
+  // 즉, 2개 이상일 시 Map으로 담아 보내야함
+  // @Param 어노테이션을 붙이면 하나의 Map이 됨.
+  @Param("area") Integer area,
+  @Param("price") Integer price
+  );
+
+  public boolean insertRealEstate(realEstate realEstate);
 }
 ```
 
@@ -244,105 +244,105 @@ public interface realEstateMapper {
 
 
 <mapper namespace="com.quiz.lesson03.mapper.realEstateMapper"> <!-- mapper 인터페이스 경로 -->
-	
-	<select id="selectRealEstateById" parameterType="int" resultType="com.quiz.lesson03.domain.realEstate">
+
+  <select id="selectRealEstateById" parameterType="int" resultType="com.quiz.lesson03.domain.realEstate">
   <!-- id: mapper 인터페이스의 메서드 / parameterType: v 타입 / resultType: 조회된 값을 저장할 DTO 경로 -->
   <!-- 즉, insert만 하고 리턴이 없을 경우 resultType은 사용 X -->
-		SELECT
-			`id`
-			,`realtorId`
-			,`address`
-			,`area`
-			,`type`
-			,`price`
-			,`rentPrice`
-			,`createdAt`
-			,`updatedAt`
-		FROM
-			`real_estate`
-		WHERE
-			`id` = #{id}
-	</select>
-	
-	<select id="selectRealEstateByRentPrice" parameterType="Integer" resultType="com.quiz.lesson03.domain.realEstate">
-		SELECT
-			`id`
-			,`realtorId`
-			,`address`
-			,`area`
-			,`type`
-			,`price`
-			,`rentPrice`
-			,`createdAt`
-			,`updatedAt`
-		FROM
-			`real_estate`
-		WHERE
-			`rentPrice` &lt;= #{rentPrice}
-	</select>
-	
-	<select id="selectRealEstateAll" resultType="com.quiz.lesson03.domain.realEstate">
-		SELECT
-			`id`
-			,`realtorId`
-			,`address`
-			,`area`
-			,`type`
-			,`price`
-			,`rentPrice`
-			,`createdAt`
-			,`updatedAt`
-		FROM
-			`real_estate`
-	</select>
-	
+  SELECT
+    `id`
+    ,`realtorId `
+    ,`address`
+    ,`area`
+    ,`type`
+    ,`price`
+    ,`rentPrice`
+    ,`createdAt`
+    ,`updatedAt`
+  FROM
+    `real_estate`
+  WHERE
+    `id` = #{id}
+  </select>
 
-	<!-- 2개 이상은 parameterType 생략 가능, 그러나 어떤 타입으로 넘어오는지 (공부를 위해) 익숙해지기 위함 -->
-	<select id="selectRealEstate" parameterType="map" resultType="com.quiz.lesson03.domain.realEstate">
-		SELECT
-			`id`
-			,`realtorId`
-			,`address`
-			,`area`
-			,`type`
-			,`price`
-			,`rentPrice`
-			,`createdAt`
-			,`updatedAt`
-		FROM
-			`real_estate`
-		WHERE
-			`type` = '매매'
-		AND
-			`area` &gt;= #{area}
-		AND
-			`price` &lt;= #{price}
-	</select>
-	
-	<insert id="insertRealEstate" parameterType="com.quiz.lesson03.domain.realEstate">
-		INSERT INTO `real_estate`
-		(
-			`realtorId`
-			,`address`
-			,`area`
-			,`type`
-			,`price`
-			,`rentPrice` <!-- null이더라도 코드 중복을 방지(재사용성 높임)하기 위해 table column은 써준다. -->
-			,`createdAt`
-			,`updatedAt`
-		)
-		VALUES
-		(
-			#{realtorId}
-			,#{address}
-			,#{area}
-			,#{type}
-			,#{price}
-			,#{rentPrice}
-			,NOW()
-			,NOW()
-		)
-	</insert>
+  <select id="selectRealEstateByRentPrice" parameterType="Integer" resultType="com.quiz.lesson03.domain.realEstate">
+  SELECT
+    `id`
+    ,`realtorId`
+    ,`address`
+    ,`area`
+    ,`type`
+    ,`price`
+    ,`rentPrice`
+    ,`createdAt`
+    ,`updatedAt`
+  FROM
+    `real_estate`
+  WHERE
+    `rentPrice` &lt;= #{rentPrice}
+  </select>
+
+  <select id="selectRealEstateAll" resultType="com.quiz.lesson03.domain.realEstate">
+  SELECT
+    `id`
+    ,`realtorId`
+    ,`address`
+    ,`area`
+    ,`type`
+    ,`price`
+    ,`rentPrice`
+    ,`createdAt`
+    ,`updatedAt`
+  FROM
+    `real_estate`
+  </select>
+
+
+  <!-- 2개 이상은 parameterType 생략 가능, 그러나 어떤 타입으로 넘어오는지 (공부를 위해) 익숙해지기 위함 -->
+  <select id="selectRealEstate" parameterType="map" resultType="com.quiz.lesson03.domain.realEstate">
+  SELECT
+    `id`
+    ,`realtorId`
+    ,`address`
+    ,`area`
+    ,`type`
+    ,`price`
+    ,`rentPrice`
+    ,`createdAt`
+    ,`updatedAt`
+  FROM
+    `real_estate`
+  WHERE
+    `type` = '매매'
+  AND
+    `area` &gt;= #{area}
+  AND
+    `price` &lt;= #{price}
+  </select>
+
+  <insert id="insertRealEstate" parameterType="com.quiz.lesson03.domain.realEstate">
+  INSERT INTO `real_estate`
+  (
+    `realtorId`
+    ,`address`
+    ,`area`
+    ,`type`
+    ,`price`
+    ,`rentPrice` <!-- null이더라도 코드 중복을 방지(재사용성 높임)하기 위해 table column은 써준다. -->
+    ,`createdAt`
+    ,`updatedAt`
+  )
+  VALUES
+  (
+    #{realtorId}
+    ,#{address}
+    ,#{area}
+    ,#{type}
+    ,#{price}
+    ,#{rentPrice}
+    ,NOW()
+    ,NOW()
+  )
+  </insert>
 
 </mapper>
 ```
