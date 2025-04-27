@@ -20,6 +20,8 @@ DB에 데이터를 저장하는 건 DB나 데이터를 관리하는 네 가지 �
 
 insert는 create에 해당하는 작업으로 신규 데이터를 DB에 저장한다.
 
+![db](/assets/images/posts_img/spring-insert/success.png)
+
 <hr>
 
 ## 1. Controller
