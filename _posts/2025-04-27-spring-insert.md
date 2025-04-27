@@ -184,7 +184,9 @@ int말고 입력(저장)한 데이터를 리턴 받아야 한다.
 - [참고 1](https://seyuuu.tistory.com/12)
 - [참고 2](https://maivve.tistory.com/348)
 
-### xml
+<br>
+
+### 5-1. xml
 
 `insert` 태그에 `useGeneratedKeys`, `keyProperty`를 추가한다.
 
@@ -199,11 +201,11 @@ int말고 입력(저장)한 데이터를 리턴 받아야 한다.
 <insert id="insertRealEstate" parameterType="com.quiz.lesson03.domain.realEstate" useGeneratedKeys="true" keyProperty="id">
 ```
 
-### Mapper
+### 5-2. Mapper
 
 <u>파라미터 타입이 달라졌으니 오버로딩으로 같은 메서드를 써도 될까?</u>
 
-**결론은 불가능하다.**
+**<font color="#990000">결론은 불가능하다.</font>**
 
 **<font color="#990000">mybatis에서는 오버로딩이 불가능하기 때문이다.</font>**
 
@@ -211,13 +213,13 @@ int말고 입력(저장)한 데이터를 리턴 받아야 한다.
 
 다시 select으로 조회하는 건 비효율적이라며? -> 이건 클라이언트가 다시 조회해야 한다는 걸 뜻한다.
 
-쉽게 말해서 **'회원가입 -> 가입 축하 -> 마이페이지 조회' 프로세스**에서 **'가입 축하 + 마이페이지 정보'**를 보여주는 것이다.
+쉽게 말해서 **'회원가입 -> 가입 축하 -> 마이페이지 조회'** 프로세스에서 **'회원가입 -> 가입 축하 + 마이페이지 정보'**를 보여주는 것이다.
 
 ```java
 public realEstate selectRealEstate(int id);
 ```
 
-### Service
+### 5-3. Service
 
 ```java
 public realEstate addRealEstate(realEstate realEstate) {
@@ -226,7 +228,7 @@ public realEstate addRealEstate(realEstate realEstate) {
 }
 ```
 
-### Controller
+### 5-4. Controller
 
 ```java
 @RequestMapping("/1")
