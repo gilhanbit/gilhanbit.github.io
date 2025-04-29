@@ -1,6 +1,6 @@
 ---
 title: "[Baekjoon] 입출력과 사칙연산"
-excerpt: "백준 - 단계별로 풀어보기"
+excerpt: "입력, 출력과 사칙연산을 연습해 봅시다. Hello World!"
 
 categories:
   - Baekjoon
