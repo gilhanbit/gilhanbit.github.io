@@ -114,7 +114,7 @@ public class step02 {
     int[] dice = new int[3];
     for (int i = 0; i < 3; i++) {
       dice[i] = rand.nextInt(6) + 1;
-      System.out.println(dice[i] + " ");
+      System.out.println(dice[i]);
     }
     
     int result = 0;
