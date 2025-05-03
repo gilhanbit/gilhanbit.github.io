@@ -81,7 +81,7 @@ switch (day) {
 
 ## 4. 연습문제
 
-![문제](/assets/images/posts_img/condition/quiz.png)
+![문제](/assets/images/posts_img/java/condition/quiz.png)
   
 위 조건을 보면 100으로 나누어 떨어지는 연도는 윤년이 아니지만 4로 나누어 떨어지는 연도는 윤년이라고 되어있다.
 

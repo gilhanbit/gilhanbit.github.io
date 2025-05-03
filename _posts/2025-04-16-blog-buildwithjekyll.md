@@ -34,21 +34,21 @@ last_modified_at: 2025-04-16
 
 그리고 아래처럼 계속된 빌드 에러가 나고 있었다.
 
-![에러](/assets/images/posts_img/buildwithjekyll/fail_pagesbuildanddeployment.png)
+![에러](/assets/images/posts_img/blog/buildwithjekyll/fail_pagesbuildanddeployment.png)
 
 ## 2. Build with Jekyll
 
-![에러2](/assets/images/posts_img/buildwithjekyll/buildwithjekyll.png)
+![에러2](/assets/images/posts_img/blog/buildwithjekyll/buildwithjekyll.png)
 
 에러 원인 파악을 위해 우측 상단의 view logs를 클릭하고 로그인.
 
-![에러3](/assets/images/posts_img/buildwithjekyll/error3.png)
+![에러3](/assets/images/posts_img/blog/buildwithjekyll/error3.png)
 
 Build with Jekyll 좌측 X 옆의 화살표 버튼을 누르면 에러의 원인을 파악할 수 있다.
 
 처음에는 jsp 지원을 하지 않아서 발생한 에러인가 싶어, 있는 그대로 출력하도록 지시하는 태그를 집어넣어 수습했는데 진짜 에러 원인은 따로 있었다.
 
-![에러3](/assets/images/posts_img/buildwithjekyll/error4.png)
+![에러3](/assets/images/posts_img/blog/buildwithjekyll/error4.png)
 
 바로 **Jekyll이 Liquid 템플릿 문법을 잘못 해석해 에러를 발생시킨 것**이다.
 

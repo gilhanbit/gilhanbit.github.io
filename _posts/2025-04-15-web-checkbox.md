@@ -20,7 +20,7 @@ last_modified_at: 2025-04-15
 
 >메뉴 데이터 중 별점이 4점 이상인 메뉴만 출력 (체크하지 않았을 경우 검색한 메뉴만 출력)
 
-![출력](/assets/images/posts_img/checkbox/checkbox.png)
+![출력](/assets/images/posts_img/web/checkbox/checkbox.png)
 
 <hr>
 

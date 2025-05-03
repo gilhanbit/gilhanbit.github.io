@@ -20,7 +20,7 @@ last_modified_at: 2025-04-24
 
 프로그램이 실행되면 메모리가 자동으로 할당되고 해제되며 동작하는데, 이때 할당되는 메모리의 공간이 크게 `데이터`, `스택`, `힙` 영역으로 나누어진다.
 
-![memory](/assets/images/posts_img/stackheap/memory.png)
+![memory](/assets/images/posts_img/cs/stackheap/memory.png)
 
 메모리 구조를 간단하게 나타내면 위 사진과 같다.
 

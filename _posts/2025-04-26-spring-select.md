@@ -32,7 +32,7 @@ last_modified_at: 2025-04-26
 
 ## 1. Spring MVC pattern
 
-![springmvcpattern](/assets/images/posts_img/spring-select/springmvc.png)
+![springmvcpattern](/assets/images/posts_img/spring/select/springmvc.png)
 
 view가 우리 눈앞에 보이는 화면이다.
 

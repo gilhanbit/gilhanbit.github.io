@@ -80,7 +80,7 @@ Car bmw = new Car();
 
 <u>객체와 인스턴스를 구분하는 것은 클래스로부터 생성되었다는 것에 의미를 부여하는 것일 뿐, 엄격하게 객체와 인스턴스를 나누는 것은 어렵다.</u>
 
-![참고](/assets/images/posts_img/terms/ggoomter.png)
+![참고](/assets/images/posts_img/java/terms/ggoomter.png)
 
 클래스, 객체, 인스턴스에 대해 정말 쉽게 설명한 댓글이 아닐까 싶다.
 
