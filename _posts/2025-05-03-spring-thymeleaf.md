@@ -82,7 +82,7 @@ public class Lesson05Controller {
 
 ## 5. 조건문
 
->th:if / th:unless
+>th:if / th:unless<br>
 >th:switch / th:case
 
 타임리프에는 else if, else와 같은 개념이 없다.
