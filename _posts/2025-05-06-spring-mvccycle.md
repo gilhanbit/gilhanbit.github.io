@@ -194,6 +194,61 @@ public interface SellerMapper {
 - 클라이언트의 입력을 받아 controller에 전달
 - 모델의 데이터를 출력
 
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>판매자 추가</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>판매자 추가</h1>
+    <form method="post" action="/seller/afterAdd">
+      <div class="form-group">
+        <label for="nickname">닉네임</label>
+        <input type="text" id="nickname" name="nickname" class="form-control col-4">
+      </div>
+      <div class="form-group">
+        <label for="profileImgUrl">프로필 사진</label>
+        <input type="text" id="profileImgUrl" name="profileImgUrl" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="temperature">매너 온도</label>
+        <input type="text" id="temperature" name="temperature" class="form-control col-4">
+      </div>
+      
+      <input type="submit" value="추가" class="btn btn-primary">
+    </form>
+  </div>
+</body>
+</html>
+```
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>판매자 정보</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>판매자 정보</h1>
+    <img th:src="${seller.profileImgUrl}" width="200">
+    <div class="h1" th:text="${seller.nickname}"></div>
+    <div class="text-warning h3 font-weight-bold" th:text="${seller.temperature}"></div>
+  </div>
+</body>
+</html>
+```
+
 <hr>
 
 ## 4. Controller
@@ -238,3 +293,9 @@ public class SellerController {
 	}
 }
 ```
+
+<hr>
+
+**참고**
+
+- [참고](https://velog.io/@chlek95/Spring-MVC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%9D%90%EB%A6%84-Entity-DTO-Controller-Service-Repository)
