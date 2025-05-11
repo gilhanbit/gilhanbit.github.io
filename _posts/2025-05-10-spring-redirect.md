@@ -16,7 +16,7 @@ date: 2025-05-10
 last_modified_at: 2025-05-10
 ---
 
-request에 대한 response로 `redirect`, `foward`를 한다.
+request에 대한 response로 `redirect`, `foward`를 주로 사용한다.
 
 그 이유는 무엇일까?
 
