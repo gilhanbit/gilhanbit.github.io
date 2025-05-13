@@ -239,7 +239,7 @@ $(function () {
 
 <hr>
 
-## 2. Controller
+## 3. Controller
 
 ```java
 @RequestMapping("/bookmark")
