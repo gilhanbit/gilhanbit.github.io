@@ -12,8 +12,8 @@ permalink: /java/autowired/
 toc: true
 toc_sticky: true
 
-date: 2025-05-30
-last_modified_at: 2025-05-30
+date: 2025-05-29
+last_modified_at: 2025-05-29
 ---
 
 Spring에는 Bean DI를 지원하는 대표적인 어노테이션인 @Autowired와 @RequiredArgsConstructor가 있다.
