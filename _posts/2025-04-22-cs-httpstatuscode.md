@@ -1,13 +1,13 @@
 ---
-title: "[Web] HTTP response status codes"
+title: "[CS] HTTP response status codes"
 excerpt: "HTTP 상태 코드 암기 노트"
 
 categories:
-  - Web
+  - CS
 tags:
   - [httpstatuscode]
 
-permalink: /web/httpstatuscode/
+permalink: /cs/httpstatuscode/
 
 toc: true
 toc_sticky: true

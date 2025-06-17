@@ -20,17 +20,11 @@ main:
 categories:
   - title: "Java"
     url: /categories/java/
-  - title: "Baekjoon"
-    url: /categories/baekjoon/
-  - title: "Front End"
-    url: /categories/front_end/
-  - title: "DB"
-    url: /categories/db/
-  - title: "Web"
-    url: /categories/web/
   - title: "Spring"
     url: /categories/spring/
+  - title: "DB"
+    url: /categories/db/
   - title: "CS"
     url: /categories/cs/
-  - title: "Blog"
-    url: /categories/blog/
+  - title: "Baekjoon"
+    url: /categories/baekjoon/

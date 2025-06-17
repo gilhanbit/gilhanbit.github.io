@@ -1,13 +1,13 @@
 ---
-title: "[Web] response.getWriter();의 컴파일 에러"
+title: "[CS] response.getWriter();의 컴파일 에러"
 excerpt: "컴파일 에러 이유와 throws IOException을 선언해야 하는 이유"
 
 categories:
-  - Web
+  - CS
 tags:
   - [web, ioexception]
 
-permalink: /web/compileerror_getwriter/
+permalink: /cs/compileerror_getwriter/
 
 toc: true
 toc_sticky: true
